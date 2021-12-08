@@ -1,0 +1,156 @@
+.static, .relative, .stiky, .absolute{
+    position: static;
+    width: 200px;
+	height: 100px;
+	background: rgb(212, 211, 211);
+    border: 1px solid #000000;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    padding-top: 35px;
+}
+.relative{
+    position: relative;
+    top: 20px;
+    left: 100px;
+}
+.stiky{
+    position: sticky;
+    left: 600px;
+    top: 10px;
+}
+.flag1{
+    display: flex;
+    justify-content: center;
+}
+.flag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+	height: 300px;
+    background: white;
+    border: 1px solid black;
+}
+.circle{
+    display: flex;
+    width: 200px;
+	height: 200px;
+	background: red;
+	border-radius: 50%;
+}
+.absolute{
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gradient{
+    position: absolute;
+    right: 0;
+    top: 170px;
+    width: 300px;
+    height: 300px;
+    background: #f09433; 
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 20px solid white;
+    border-radius: 30%;
+}
+.cent-circle{
+    width: 50px;
+	height: 50px;
+	background: transparent;
+	border-radius: 50%;
+    border: 20px solid white;
+}
+.small-circle{
+    width: 20px;
+	height: 20px;
+	background: white;
+	border-radius: 50%;
+    position: absolute;
+    right: 85px;
+    top: 85px;
+   
+}
+.obol2{
+    position: absolute;
+    top: 2000px;
+    left: 945px;
+    width: 30px;
+    height: 1500px;
+    background-color: rgb(1, 95, 1);
+    border-radius: 51% 49% 45% 55% / 1% 0% 100% 99%  ;
+    -webkit-clip-path: inset(0 0 55% 0);
+    clip-path: inset(0 0 55% 0);
+}
+.obol1{
+    position: absolute;
+    top: 2000px;
+    left: 875px;
+    width: 30px;
+    height: 1500px;
+    background-color: rgb(1, 95, 1);
+    border-radius: 51% 49% 45% 55% / 0% 1% 99% 100% ;
+    -webkit-clip-path: inset(0 0 55% 0);
+    clip-path: inset(0 0 55% 0);
+}
+.obol{
+    position: absolute;
+    top: 2000px;
+    left: 900px;
+    width: 50px;
+    height: 1500px;
+    background-color: green;
+    border-radius: 51% 49% 45% 55% / 2% 2% 98% 98%   ;
+    -webkit-clip-path: inset(0 0 55% 0);
+    clip-path: inset(0 0 55% 0);
+}
+.trig{
+    position: absolute;
+    top: 1815px;
+    left: 825px;
+    width: 206px;
+    height: 200px;
+    -webkit-clip-path: polygon(50% 0, 24% 100%, 74% 100%);
+    clip-path: polygon(50% 0, 24% 100%, 74% 100%);
+    background: rgb(141,95,59);
+    background: linear-gradient(90deg, rgb(71, 48, 30) 0%, rgb(194, 159, 129) 100%);
+}
+.trig1{
+    position: absolute;
+    top: 1815px;
+    left: 895px;
+    width: 65px;
+    height: 65px;
+    -webkit-clip-path: polygon(50% 0, 24% 100%, 74% 100%);
+    clip-path: polygon(50% 0, 24% 100%, 74% 100%);
+    background-color: rgb(37, 37, 37);
+}
+.obol, .obol1, .obol2{
+    animation: background 4s infinite alternate;
+}
+@keyframes background {
+    50% {
+      background: darkviolet;
+      box-shadow: 0 -140px 70px -120px mediumorchid inset,
+                  0 -210px 70px -120px teal inset,
+                  0 -280px 70px -120px plum inset;
+    }
+  }
+
